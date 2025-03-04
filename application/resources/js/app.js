@@ -30,30 +30,3 @@ createInertiaApp({
         color: "#4B5563",
     },
 });
-
-// import { createApp, h } from "vue";
-// import { createRouter, createWebHistory } from "vue-router";
-// import Default from "@/Layouts/DefaultLayout.vue";
-// import Home from "@/views/Home.vue";
-// import About from "@/views/About.vue";
-// import "../css/app.css";
-
-// const routes = [
-//     { path: "/", component: Home },
-//     { path: "/about", component: About },
-// ];
-
-// const router = createRouter({
-//     history: createWebHistory(),
-//     routes,
-// });
-
-// const app = createApp({
-//     render: () =>
-//         h(Default, {
-//             default: h(router.currentRoute.value.matched[0].components.default),
-//         }),
-// });
-
-// app.use(router);
-// app.mount("#app");

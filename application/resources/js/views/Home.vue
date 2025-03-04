@@ -1,7 +1,14 @@
 <template>
     <div>
-        <h1 class="text-3xl font-bold text-center text-blue-950 m-10">
-            Welcome here
-        </h1>
+        <Hero />
     </div>
 </template>
+<script>
+import Hero from "@/Components/Hero.vue";
+
+export default {
+    components: {
+        Hero,
+    },
+};
+</script>
