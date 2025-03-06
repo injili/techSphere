@@ -8,7 +8,12 @@ use Inertia\Inertia;
 class PageController extends Controller
 {
     public function home() {
-        return Inertia::render('Home');
+        return Inertia::render('Home',[
+            'canLogin' => Route::has('login'),
+            'canRegister' => Route::has('register'),
+            'laravelVersion' => Application::VERSION,
+            'phpVersion' => PHP_VERSION,
+        ]);
     }
     public function about(){
         return Inertia::render('About');
