@@ -1,17 +1,14 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Home');
-});
+Route::get('/',[PageController::class, 'home']) ->name('home');
 
-Route::get('/about', function () {
-    return Inertia::render('About');
-});
+Route::get('/about', [PageController::class, 'about']) ->name('about');
 
 
 // Route::get('/dashboard', function () {
