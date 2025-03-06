@@ -31,6 +31,11 @@ export default {
                         condimentum nisi. Mauris id sapien dui. Morbi nisi ante,
                         convallis in lacus in, tempor cursus tellus ...
                     </p>
+                    <button
+                        class="bg-yellow-500 justify-end w-44 p-2 rounded-xl text-2xl font-montserrat"
+                    >
+                        Read
+                    </button>
                 </div>
             </div>
         </div>
@@ -46,7 +51,7 @@ export default {
                         class="bg-gradient-to-br from-black/20 to-black/95 h-full w-full rounded-xl flex flex-col justify-end gap-8 p-8 text-wrap lg:p-16"
                     >
                         <h3
-                            class="font-popins text-white text-end text-4xl lg:text-6xl xl:text-8xl font-semibold lg:font-bold"
+                            class="font-popins text-white text-end text-4xl lg:text-6xl font-semibold lg:font-bold"
                         >
                             {{ post.name }}
                         </h3>

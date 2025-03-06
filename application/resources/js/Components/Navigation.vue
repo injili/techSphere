@@ -1,8 +1,8 @@
 <template>
-    <nav class="bg-whi text-blue-950 mx-4">
-        <div class="flex justify-between items-center">
-            <img src="/images/preach.png" alt="WhiteLogo" class="w-32" />
-            <ul class="flex space-x-4">
+    <nav class="text-blue-950 h-44 mx-4 lg:mx-6 xl:mx-8">
+        <div class="flex justify-between items-center h-full">
+            <img src="/images/pledge.png" alt="WhiteLogo" class="h-16" />
+            <ul class="flex space-x-4 text-lg lg:text-xl xl:text-2xl">
                 <li>
                     <a href="/" class="p-4">Blogs</a>
                 </li>
@@ -13,7 +13,7 @@
                     <a href="/services" class="p-4">Admin LogIn</a>
                 </li>
                 <li>
-                    <a href="/contact" class="p-4">Admin SignUp</a>
+                    <a href="/contact" class="pl-4">Admin SignUp</a>
                 </li>
             </ul>
         </div>

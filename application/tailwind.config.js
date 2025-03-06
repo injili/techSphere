@@ -18,7 +18,8 @@ export default {
                 poppins: ["Poppins", "sans-serif"],
             },
             colors: {
-                whi: "F5F6FB",
+                whi: "#F5F6FB",
+                bl: "#263343",
             },
         },
     },

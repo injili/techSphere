@@ -1,22 +1,26 @@
 <template>
-    <nav class="bg-whi text-blue-950">
-        <div class="flex justify-between items-center">
-            <img src="/images/preach.png" alt="WhiteLogo" class="w-32" />
-            <ul class="flex space-x-4">
+    <nav class="text-blue-950 h-44">
+        <div
+            class="flex justify-between items-center h-full px-16 font-montserrat"
+        >
+            <img src="/images/pledge.png" alt="WhiteLogo" class="h-16" />
+            <ul class="flex space-x-4 text-lg lg:text-xl xl:text-2xl">
                 <li>
-                    <a href="/" class="p-4">Blogs</a>
+                    <a href="/about" class="p-4">Blogs</a>
                 </li>
                 <li>
-                    <a href="/about" class="p-4">Contact</a>
+                    <a href="/" class="p-4">Contact</a>
                 </li>
                 <li>
-                    <a href="/services" class="p-4">Admin LogIn</a>
+                    <a href="/" class="p-4">Admin LogIn</a>
                 </li>
                 <li>
-                    <a href="/contact" class="p-4">Admin SignUp</a>
+                    <a href="/" class="p-4">Admin SignUp</a>
                 </li>
             </ul>
-            <p>Copyright TechSphere 2025</p>
+            <p class="text-lg lg:text-xl xl:text-2xl">
+                Copyright TechSphere 2025
+            </p>
         </div>
     </nav>
 </template>
