@@ -1,0 +1,25 @@
+<script>
+export default {
+    name: "Newsletter",
+};
+</script>
+<template>
+    <div
+        class="flex flex-col items-center w-full justify-center h-[60vh] gap-8 bg-blue-100"
+    >
+        <h2 class="font-poppins text-blue-600 text-6xl lg:text-8xl font-bold">
+            Newsletter
+        </h2>
+        <p class="text-center max-w-3xl font-montserrat text-xl">
+            Lorem ipsum dolor sit amet, consectetur aSuspendisse rhoncus metus
+            et ante dictum tempus. Nulla pulvinar libero ut iaculis interdum.
+            Vestibulum nec condimentum nisi. Mauris id sapien dui. Morbi nisi
+            ante, convallis in lacus in, tempor cursus tellus. Aenean porttitor,
+            lorem pretium tincidunt egestas, odio quam pulvinar arcu,
+            pellentesque ultricies arcu nisl vel enim.
+        </p>
+        <form action="">
+            <input type="text" class="p-2 border border-gray-300 w-3xl" />
+        </form>
+    </div>
+</template>
