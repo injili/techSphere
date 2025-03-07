@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Route;
 
 class PageController extends Controller
 {

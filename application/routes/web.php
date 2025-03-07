@@ -7,8 +7,15 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/',[PageController::class, 'home'])
-    ->middleware(['auth', 'verified'])
     ->name('home');
+
+// Route::get('/dashboard',[PageController::class, 'dashboard'])
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
+
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/about', [PageController::class, 'about']) ->name('about');
 

@@ -31,14 +31,6 @@ export default {
                         condimentum nisi. Mauris id sapien dui. Morbi nisi ante,
                         convallis in lacus in, tempor cursus tellus ...
                     </p>
-                    <p v-if="canLogin" class="text-white">You can log in.</p>
-                    <p v-if="canRegister" class="text-white">
-                        You can register.
-                    </p>
-                    <p class="text-white">
-                        Laravel version: {{ laravelVersion }}
-                    </p>
-                    <p class="text-white">PHP version: {{ phpVersion }}</p>
                     <button
                         class="bg-yellow-500 justify-end w-44 p-2 rounded-xl text-2xl font-montserrat"
                     >
@@ -76,12 +68,6 @@ export default {
 </template>
 
 <script setup>
-defineProps({
-    canLogin: Boolean,
-    canRegister: Boolean,
-    laravelVersion: String,
-    phpVersion: String,
-});
 const posts = [
     {
         name: "This Title Here Now.",

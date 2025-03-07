@@ -13,8 +13,8 @@ createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: async (name) => {
         const page = await resolvePageComponent(
-            `./views/${name}.vue`,
-            import.meta.glob("./views/**/*.vue")
+            `./Pages/${name}.vue`,
+            import.meta.glob("./Pages/**/*.vue")
         );
 
         page.default.layout = page.default.layout || DefaultLayout;
@@ -27,6 +27,6 @@ createInertiaApp({
             .mount(el);
     },
     progress: {
-        color: "#4B5563",
+        color: "#ECBF28",
     },
 });
