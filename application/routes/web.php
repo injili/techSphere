@@ -9,9 +9,8 @@ use Inertia\Inertia;
 Route::get('/',[PageController::class, 'home'])
     ->name('home');
 
-// Route::get('/dashboard',[PageController::class, 'dashboard'])
-//     ->middleware(['auth', 'verified'])
-//     ->name('dashboard');
+Route::get('/posts', [PageController::class, 'index'])->name('posts.index');
+Route::get('/posts/{post}', [PageController::class, 'show'])->name('posts.show');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

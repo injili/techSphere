@@ -12,6 +12,11 @@ class CommentSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Post:all()->each(function ($post) {
+            Comment::factory(10)->create([
+                'post_id' => $post->id,
+                'user_id' => $post->user_id
+            ]);
+        });
     }
 }
