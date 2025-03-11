@@ -10,6 +10,9 @@ class Post extends Model
     /** @use HasFactory<\Database\Factories\PostFactory> */
     use HasFactory;
 
+    // These are the fields that can be mass-assigned
+    protected $fillable = ['title', 'content', 'user_id', 'is_active'];
+
     /**
      * Get the user that owns the Post
      */

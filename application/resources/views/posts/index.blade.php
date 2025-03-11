@@ -5,6 +5,7 @@
     </head>
     <body>
         <h1>Posts</h1>
+        <a href="{{ route('posts.create') }}">Create a New Post</a>
         @foreach($posts as $post)
             <h2>{{ $post->title }}</h2>
             <p>By {{ $post->user->name }} | {{ $post->created_at->format('M d, Y') }}</p>
@@ -17,4 +18,5 @@
                 <p>By {{ $comment->user->name }}</p>
             @endforeach
         @endforeach
+
     </body>
