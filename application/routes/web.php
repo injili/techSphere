@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PostController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -9,8 +10,8 @@ use Inertia\Inertia;
 Route::get('/',[PageController::class, 'home'])
     ->name('home');
 
-Route::get('/posts', [PageController::class, 'index'])->name('posts.index');
-Route::get('/posts/{post}', [PageController::class, 'show'])->name('posts.show');
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

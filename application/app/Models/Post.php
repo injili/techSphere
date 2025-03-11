@@ -14,7 +14,7 @@ class Post extends Model
      * Get the user that owns the Post
      */
     public function user(){
-        return $tihis->belongsTo(user::class);
+        return $this->belongsTo(user::class);
     }
 
     /**
